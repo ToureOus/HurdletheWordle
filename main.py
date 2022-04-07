@@ -1,5 +1,5 @@
 import time
-import json
+import json #javascript object notation, turns data into pyth\on readable "dictionaries"
 from selenium import webdriver
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.ui import WebDriverWait
