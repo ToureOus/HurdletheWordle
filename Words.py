@@ -761,6 +761,7 @@ dictionary_possible_words = [
     'forge',
     'forth',
     'forty',
+    'foray',
     'fouls',
     'found',
     'fours',
