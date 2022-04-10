@@ -70,12 +70,16 @@ def method():
         enter_word(word)
         evaluator = get_data()
         while type(evaluator[q + 1]) is not list:
-            for i in range(5):
-                page.send_keys(Keys.BACKSPACE)
-            possible_words.remove(word)
-            word = possible_words[0]
-            enter_word(word)
-            evaluator = get_data()
+            try:
+                for i in range(5):
+                    page.send_keys(Keys.BACKSPACE)
+                    possible_words.remove(word)
+                    word = possible_words[0]
+                    enter_word(word)
+                    evaluator = get_data()
+            except:
+                print("You're Welcome")
+                return 0
 
 
 time.sleep(2.5)
