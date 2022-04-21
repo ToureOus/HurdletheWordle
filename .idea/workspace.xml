@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d054724f-565c-429e-a321-3ecb2c20fcfb" name="Changes" comment="added Class wurdle">
+    <list default="true" id="d054724f-565c-429e-a321-3ecb2c20fcfb" name="Changes" comment="exceptions added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -31,7 +31,6 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
@@ -105,14 +104,7 @@
       <option name="project" value="LOCAL" />
       <updated>1649701333306</updated>
     </task>
-    <task id="LOCAL-00006" summary="added Class wurdle">
-      <created>1650481365018</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1650481365018</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -130,7 +122,6 @@
     <MESSAGE value="edited code v1" />
     <MESSAGE value="04/072022" />
     <MESSAGE value="exceptions added" />
-    <MESSAGE value="added Class wurdle" />
-    <option name="LAST_COMMIT_MESSAGE" value="added Class wurdle" />
+    <option name="LAST_COMMIT_MESSAGE" value="exceptions added" />
   </component>
 </project>
