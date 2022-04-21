@@ -21,12 +21,18 @@ page.click()
 
 #does exactly likeit says, enters the word into the wordle interface
 class Wurdle():
+
+    """main Class
+    """
     def enter_word(self,word):
+        """Gets selected word and enters it into Selenium browser"""
         page.send_keys(word)
         page.send_keys(Keys.RETURN)
         time.sleep(2)
 
     def get_data(self):
+        """goes and gets data from the website and the state of our inputted word. Whether it was correct, wrong, and correct
+        letter placements"""
         local_data = driver.execute_script("return window.localStorage;")
         game_info = local_data["nyt-wordle-state"]  # inspected page source found state of game you are on
         evaluator = json.loads(game_info)["evaluations"]  # friend jason loads the game info and returns
@@ -34,6 +40,7 @@ class Wurdle():
 
     # main driver method on guessing and cross checking words from the word list.
     def method(self):
+        """inputs selected three guesses and edits our possible words list based off the response of evaluator, inputs a most probable answer after"""
         guesses = ['brown', 'quick', 'shady']
         possible_words = wDict
         known_l = [] #known letters list
@@ -88,3 +95,5 @@ class Wurdle():
 
 wurdle = Wurdle()
 wurdle.method()
+
+#92% success rate since April 13th
