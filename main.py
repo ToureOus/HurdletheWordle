@@ -8,33 +8,34 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from Words import dictionary_possible_words
 
-wDict = dictionary_possible_words
+class Setup():
+    """Setup class for main program, sets up selenium attributes and main list dictionary"""
+    def __init__(self):
+        self.driver = driver = webdriver.Chrome()
+        self.driver.get("https://www.nytimes.com/games/wordle/index.html")
+        self.delay = delay = WebDriverWait(driver, 10)
+        delay.until(expected_conditions.title_contains("Wordle"))
+        time.sleep(0.3)
+        self.page = page = driver.find_element(By.TAG_NAME, "html")
+        page.click()
+        self.wDict = dictionary_possible_words
+
+class Wurdle(Setup):
 
 
-#setting up parameters for selenium
-driver = webdriver.Chrome()
-driver.get("https://www.nytimes.com/games/wordle/index.html")
-delay = WebDriverWait(driver, 10)
-delay.until(expected_conditions.title_contains("Wordle"))
-time.sleep(0.3)
-page = driver.find_element(By.TAG_NAME, "html")
-page.click()
-
-#does exactly likeit says, enters the word into the wordle interface
-class Wurdle():
 
     """main Class
     """
     def enter_word(self,word):
         """Gets selected word and enters it into Selenium browser"""
-        page.send_keys(word)
-        page.send_keys(Keys.RETURN)
+        self.page.send_keys(word)
+        self.page.send_keys(Keys.RETURN)
         time.sleep(2)
 
     def get_data(self):
         """goes and gets data from the website and the state of our inputted word. Whether it was correct, wrong, and correct
         letter placements"""
-        local_data = driver.execute_script("return window.localStorage;")
+        local_data = self.driver.execute_script("return window.localStorage;")
         game_info = local_data["nyt-wordle-state"]  # inspected page source found state of game you are on
         evaluator = json.loads(game_info)["evaluations"]  # friend jason loads the game info and returns
         return evaluator
@@ -42,9 +43,9 @@ class Wurdle():
     # main driver method on guessing and cross checking words from the word list.
     def method(self):
         """inputs selected two guesses and edits our possible words list based off the response of evaluator, inputs a most probable answer after"""
-        guesses = ['guilt','shade']
+        guesses = ['brown','shade']
         # 'quick' and 'brown' switched with , removed
-        possible_words = wDict
+        possible_words = self.wDict
         known_l = [] #known letters list
         word = guesses[0]
         self.enter_word(word)
