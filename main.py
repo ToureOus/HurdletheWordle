@@ -43,7 +43,8 @@ class Wurdle(Setup):
     # main driver method on guessing and cross checking words from the word list.
     def method(self):
         """inputs selected two guesses and edits our possible words list based off the response of evaluator, inputs a most probable answer after"""
-        guesses = ['brown','shade']
+        guesses = ['soare','clint'] #better word combination?
+        # ['brown', 'shade']
         # 'quick' and 'brown' switched with , removed
         possible_words = self.wDict
         known_l = [] #known letters list
