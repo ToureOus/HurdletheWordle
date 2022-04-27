@@ -95,7 +95,6 @@ class Wurdle(Setup):
         time.sleep(2.5)
         page.click()
 
-
 wurdle = Wurdle()
 wurdle.method()
 
