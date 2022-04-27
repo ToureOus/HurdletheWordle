@@ -1,5 +1,6 @@
 import time
 import json #javascript object notation, turns data into pyth\on readable "dictionaries"
+import selenium
 from selenium import webdriver
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.ui import WebDriverWait
@@ -40,8 +41,9 @@ class Wurdle():
 
     # main driver method on guessing and cross checking words from the word list.
     def method(self):
-        """inputs selected three guesses and edits our possible words list based off the response of evaluator, inputs a most probable answer after"""
-        guesses = ['brown', 'quick', 'shady']
+        """inputs selected two guesses and edits our possible words list based off the response of evaluator, inputs a most probable answer after"""
+        guesses = ['guilt','shade']
+        # 'quick' and 'brown' switched with , removed
         possible_words = wDict
         known_l = [] #known letters list
         word = guesses[0]
@@ -51,10 +53,10 @@ class Wurdle():
         for q in range(5):
             stats = evaluator[q]
             correct_tally = 0
-            for i in range(4):
+            for i in range(3):
                 if (stats[i] != "absent") and (not word[i] in known_l):
                     known_l.append(word[i])
-                if stats[i] == "correct":
+                elif stats[i] == "correct":
                     correct_tally += 1
             if correct_tally == 5:
                 time.sleep(2.5)
@@ -71,7 +73,7 @@ class Wurdle():
                     possible_words = [x for x in possible_words if (letter in x) and (x[i] != letter)]
                 elif stats[i] == "correct":
                     possible_words = [x for x in possible_words if letter == x[i]]
-            if q < 2:
+            if q < 1:
                 word = guesses[q + 1]
             else:
                 word = possible_words[0]
@@ -97,3 +99,4 @@ wurdle = Wurdle()
 wurdle.method()
 
 #92% success rate since April 13th
+#edited by professor request to increase competitiveness, now guesses in 3 rather than 2.
