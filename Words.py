@@ -1,3 +1,4 @@
+#list of words from source code.
 dictionary_possible_words = [
     'aback',
     'abash',
