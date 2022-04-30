@@ -1,6 +1,5 @@
 import time
-import json #javascript object notation, turns data into pyth\on readable "dictionaries"
-import selenium
+import json #javascript object notation, turns data into pyth\on readable
 from selenium import webdriver
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.ui import WebDriverWait
@@ -16,7 +15,7 @@ class Setup():
         self.delay = delay = WebDriverWait(driver, 10)
         delay.until(expected_conditions.title_contains("Wordle"))
         time.sleep(0.3)
-        self.page = page = driver.find_element(By.TAG_NAME, "html")
+        page = self.page = driver.find_element(By.TAG_NAME, "html")
         page.click()
         self.wDict = dictionary_possible_words
 
@@ -55,14 +54,14 @@ class Wurdle(Setup):
         for q in range(5):
             stats = evaluator[q]
             correct_tally = 0
-            for i in range(3):
+            for i in range(4):
                 if (stats[i] != "absent") and (not word[i] in known_l):
                     known_l.append(word[i])
                 elif stats[i] == "correct":
                     correct_tally += 1
             if correct_tally == 5:
                 time.sleep(2.5)
-                page.click()
+                self.page.click()
                 quit()
             for i in range(5):
                 letter = word[i]
@@ -84,7 +83,7 @@ class Wurdle(Setup):
             while type(evaluator[q + 1]) is not list:
                 try:
                     for i in range(5):
-                        page.send_keys(Keys.BACKSPACE)
+                        self.page.send_keys(Keys.BACKSPACE)
                         possible_words.remove(word)
                         word = possible_words[0]
                         self.enter_word(word)
@@ -94,7 +93,7 @@ class Wurdle(Setup):
                     return 0
 
         time.sleep(2.5)
-        page.click()
+        self.page.click()
 
 wurdle = Wurdle()
 wurdle.method()

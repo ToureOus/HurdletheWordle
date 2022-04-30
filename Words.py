@@ -1054,6 +1054,7 @@ dictionary_possible_words = [
     'lanky',
     'lapel',
     'lapse',
+    'larva',
     'laser',
     'lasso',
     'lasts',
