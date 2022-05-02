@@ -3,11 +3,12 @@ import csv
 from datetime import datetime
 import json
 from selenium import webdriver
-from selenium.webdriver.support import expected_conditions
+from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from Words import dictionary_possible_words
+
 
 
 class Wurdle:
@@ -15,9 +16,10 @@ class Wurdle:
     def __init__(self):
         self.driver = driver = webdriver.Chrome()
         self.driver.get("https://www.nytimes.com/games/wordle/index.html")
+        driver.implicitly_wait(10)
         self.delay = delay = WebDriverWait(driver, 10)
-        delay.until(expected_conditions.title_contains("Wordle"))
-        time.sleep(0.3)
+        WebDriverWait(driver, 20).until(ec.element_to_be_clickable((By.XPATH, '//*[@id="pz-gdpr-btn-accept"]'))).click()
+        time.sleep(2)
         self.page = driver.find_element(By.TAG_NAME, "html")
         self.page.click()
         self.wDict = dictionary_possible_words
