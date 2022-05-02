@@ -6,7 +6,6 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from Words import dictionary_possible_words
-
 class Setup():
     """Setup class for main program, sets up selenium attributes and main list dictionary"""
     def __init__(self):
@@ -54,7 +53,7 @@ class Wurdle(Setup):
         for q in range(5):
             stats = evaluator[q]
             correct_tally = 0
-            for i in range(4):
+            for i in range(5):
                 if (stats[i] != "absent") and (not word[i] in known_l):
                     known_l.append(word[i])
                 elif stats[i] == "correct":

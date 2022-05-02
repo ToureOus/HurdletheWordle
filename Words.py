@@ -1,4 +1,4 @@
-#list of words from source code
+# list of words from source code
 dictionary_possible_words = [
     'aback',
     'abash',
@@ -759,6 +759,7 @@ dictionary_possible_words = [
     'foggy',
     'folks',
     'force',
+    'forgo',
     'forge',
     'forth',
     'forty',
@@ -2084,3 +2085,7 @@ dictionary_possible_words = [
     'zones',
     'zooms',
 ]
+# f = open ("words.txt","r")
+# lst = f.read()
+# dictionary_possible_words = lst.replace(' ', ',').split(",")
+# # print(dictionary_possible_words)
