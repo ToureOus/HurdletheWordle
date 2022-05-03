@@ -31,16 +31,7 @@ class Wurdle:
         self.page.send_keys(Keys.RETURN)
         time.sleep(2)
 
-    def stats(self, word):
-        """After the Bot has completed the puzzle, it will upload its data to a csv file"""
-        head = ['date', 'word', 'Attempts count']
-        data = [datetime.now(), word, self.count]
-        with open('worddata.csv', 'a') as f:
-            writer = csv.writer(f)
-            # writes the header
-            # writer.writerow(head) #uncomment to make a new csv file.
-            # writes the data
-            writer.writerow(data)
+
 
     def get_data(self):
         """goes and gets data from the website and the state of our inputted word. Whether it was correct,
@@ -53,6 +44,16 @@ class Wurdle:
 
 class Bot(Wurdle):
     """main program, iterates through list of words using Wurdle setup parameters, guessing and evaluating as it goes"""
+    def stats(self, word):
+        """After the Bot has completed the puzzle, it will upload its data to a csv file"""
+        head = ['date', 'word', 'Attempts count']
+        data = [datetime.now(), word, self.count]
+        with open('worddata.csv', 'a') as f:
+            writer = csv.writer(f)
+            # writes the header
+            # writer.writerow(head) #uncomment to make a new csv file.
+            # writes the data
+            writer.writerow(data)
     def main_method(self):
         """inputs selected two guesses and edits our possible words list based off the response of evaluator,
          inputs a most probable answer after"""
