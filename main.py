@@ -10,7 +10,6 @@ from selenium.webdriver.common.by import By
 from Words import dictionary_possible_words
 
 
-
 class Wurdle:
     """Setup Class    """
     def __init__(self):
@@ -30,8 +29,6 @@ class Wurdle:
         self.page.send_keys(word)
         self.page.send_keys(Keys.RETURN)
         time.sleep(2)
-
-
 
     def get_data(self):
         """goes and gets data from the website and the state of our inputted word. Whether it was correct,
@@ -54,7 +51,8 @@ class Bot(Wurdle):
             # writer.writerow(head) #uncomment to make a new csv file.
             # writes the data
             writer.writerow(data)
-    def main_method(self):
+
+    def eval(self):
         """inputs selected two guesses and edits our possible words list based off the response of evaluator,
          inputs a most probable answer after"""
         guesses = ['brown', 'shady']
@@ -119,7 +117,7 @@ class Bot(Wurdle):
 
 
 wurdle = Bot()
-wurdle.main_method()
+wurdle.eval()
 
 
 # 92% success rate since April 13th

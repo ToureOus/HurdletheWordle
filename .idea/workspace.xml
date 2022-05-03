@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d054724f-565c-429e-a321-3ecb2c20fcfb" name="Changes" comment="Fixed cookies">
+    <list default="true" id="d054724f-565c-429e-a321-3ecb2c20fcfb" name="Changes" comment="New Function">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -33,11 +33,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Python.main">
     <configuration name="Old bot" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="HurdletheWordle" />
@@ -123,6 +123,7 @@
       <updated>1649365874213</updated>
       <workItem from="1651180844171" duration="6750000" />
       <workItem from="1651479428776" duration="1199000" />
+      <workItem from="1651546172771" duration="1218000" />
     </task>
     <task id="LOCAL-00001" summary="edited code v1">
       <created>1649365988013</created>
@@ -222,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651535856089</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="New Function">
+      <created>1651539638125</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1651539638125</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,9 +259,10 @@
     <MESSAGE value="new words" />
     <MESSAGE value="Formating and new class for stats." />
     <MESSAGE value="Fixed cookies" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed cookies" />
+    <MESSAGE value="New Function" />
+    <option name="LAST_COMMIT_MESSAGE" value="New Function" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/HurdletheWordleBot$main.coverage" NAME="main Coverage Results" MODIFIED="1651539582703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HurdletheWordleBot$main.coverage" NAME="main Coverage Results" MODIFIED="1651541215598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
