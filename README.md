@@ -7,3 +7,4 @@ makea a guess on what it believes the answer is.
 Sources:
 https://nerdschalk.com/wordle-5-letter-words-with-the-most-vowels-three-and-four-vowels-words/
 Word list: From NYT source code.
+WORDLE BOT SOLVER
