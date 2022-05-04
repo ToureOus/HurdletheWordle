@@ -17,12 +17,13 @@ class Wurdle:
         self.driver.get("https://www.nytimes.com/games/wordle/index.html")
         driver.implicitly_wait(10)
         self.delay = delay = WebDriverWait(driver, 10)
-        WebDriverWait(driver, 20).until(ec.element_to_be_clickable((By.XPATH, '//*[@id="pz-gdpr-btn-accept"]'))).click()
+        # WebDriverWait(driver, 20).until(ec.element_to_be_clickable((By.XPATH, '//*[@id="pz-gdpr-btn-accept"]'))).click()
+        # uncomment if ccookies keeps poppping up
         time.sleep(2)
         self.page = driver.find_element(By.TAG_NAME, "html")
         self.page.click()
         self.wDict = dictionary_possible_words
-        self.count = 2
+        self.count = 0
 
     def enter_word(self, word):
         """Gets selected word and enters it into Selenium browser"""
@@ -93,14 +94,17 @@ class Bot(Wurdle):
                     possible_words = [x for x in possible_words if letter == x[i]]
             if q < 1:
                 word = guesses[q + 1]
+
             else:
                 word = possible_words[0]
+
             self.enter_word(word)
+            self.count += 1
             evaluator = self.get_data()
             while type(evaluator[q + 1]) is not list:
                 try:
                     for i in range(5):
-                        self.count += 1
+
                         self.page.send_keys(Keys.BACKSPACE)
                         possible_words.remove(word)
                         word = possible_words[0]
