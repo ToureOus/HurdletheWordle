@@ -56,8 +56,9 @@ class Bot(Wurdle):
     def eval(self):
         """inputs selected two guesses and edits our possible words list based off the response of evaluator,
          inputs a most probable answer after"""
-        guesses = ['brown', 'shady']
-        # ['soare', 'clint']
+        guesses = ['soare', 'clint']
+        #['brown', 'shady']
+
         # ['brown', 'shade']
         # 'two possible word combinations.
         possible_words = self.wDict
