@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d054724f-565c-429e-a321-3ecb2c20fcfb" name="Changes" comment="Fixed count">
+    <list default="true" id="d054724f-565c-429e-a321-3ecb2c20fcfb" name="Changes" comment="Fixed solutions, found script full of 2315 possible solutions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Words.py" beforeDir="false" afterPath="$PROJECT_DIR$/Words.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -251,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659972904791</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Fixed solutions, found script full of 2315 possible solutions">
+      <created>1659999396610</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1659999396610</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,6 +289,7 @@
     <MESSAGE value="New Function" />
     <MESSAGE value="New Functions" />
     <MESSAGE value="Fixed count" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed count" />
+    <MESSAGE value="Fixed solutions, found script full of 2315 possible solutions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed solutions, found script full of 2315 possible solutions" />
   </component>
 </project>
