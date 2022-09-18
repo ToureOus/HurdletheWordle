@@ -59,6 +59,53 @@ class Bot(Wurdle):
             # writes the data
             writer.writerow(data)
 
+            class Bot(Wurdle):
+                """main program, iterates through list of words using Wurdle setup parameters, guessing and evaluating as it goes"""
+
+                def stats(self, word):
+                    """After the Bot has completed the puzzle, it will upload its data to a csv file"""
+                    head = ['date', 'word', 'Attempts count']
+                    data = [datetime.now(), word, self.count]
+                    with open('worddata.csv', 'a') as f:
+                        writer = csv.writer(f)  # writes the header
+                        # writer.writerow(head) #uncomment to make a new csv file.
+                        final_line = f.readlines()[-1]
+                    curr_word = data
+                    if curr_word != final_line:
+                        writer.writerow(data)
+
+                    # writes the data
+                    # f.close()
+                    with open('worddata.csv', 'a') as f:
+
+                #     writer = csv.writer(f)# writes the header
+                #     # writer.writerow(head) #uncomment to make a new csv file.
+                #     final_line = f.readlines()[-1]
+                # curr_word = data
+                # if curr_word != final_line:
+                #     writer.writerow(data)
+
+                def eval(self):
+                    """inputs selected two guesses and edits our possible words list based off the response of evaluator,
+                     inputs a most probable answer after"""
+                    guesses = ['brown', 'shady']
+                    # ['brown', 'shade']
+                    # 'two possible word combinations.
+
+                    possible_words = self.wDict
+                    # wordfile = open( 'worddata.csv' , 'r' )
+                    # wf = csv.DictReader(wordfile)  # word file
+                    # word_col = []
+                    # for col in wf:
+                    #     word_col.append(col['word'])
+                    # possible_words = [elem for elem in possible_words if elem not in word_col]
+
+                    known_l = []  # known letters list
+                    word = guesses[0]
+                    self.enter_word(word)
+                    evaluator = self.get_data()
+
+
     def eval(self):
         """inputs selected two guesses and edits our possible words list based off the response of evaluator,
          inputs a most probable answer after"""
@@ -73,7 +120,13 @@ class Bot(Wurdle):
         word = guesses[0]
         self.enter_word(word)
         evaluator = self.get_data()
-
+        # WIP 9/18/22
+        # # wordfile = open( 'worddata.csv' , 'r' )
+        #         # wf = csv.DictReader(wordfile)  # word file
+        #         # word_col = []
+        #         # for col in wf:
+        #         #     word_col.append(col['word'])
+        #         # possible_words = [elem for elem in possible_words if elem not in word_col]
         for q in range(5):
             stats = evaluator[q]
             correct_tally = 0
