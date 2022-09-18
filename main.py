@@ -3,12 +3,14 @@ import csv
 from datetime import datetime
 import json
 from selenium import webdriver
+
 from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from Words import dictionary_possible_words
-
+from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.remote.webelement import WebElement
 
 class Wurdle:
     """Setup Class    """
@@ -16,10 +18,14 @@ class Wurdle:
         self.driver = driver = webdriver.Chrome()
         self.driver.get("https://www.nytimes.com/games/wordle/index.html")
         driver.implicitly_wait(10)
-        self.delay = delay = WebDriverWait(driver, 10)
+        # action = ActionChains(driver)
         # WebDriverWait(driver, 20).until(ec.element_to_be_clickable((By.XPATH, '//*[@id="pz-gdpr-btn-accept"]'))).click()
         # uncomment if ccookies keeps poppping up
-        time.sleep(2)
+
+        # closeicon = driver.find_element(By.CLASS_NAME, "Modal-module_closeIcon__b4z74")
+        # action.find_element(By.CLASS_NAME, "Modal-module_closeIcon__b4z74").click().perform()
+        driver.find_element(By.CLASS_NAME, "Modal-module_closeIcon__b4z74").click() #simplified popup close icon.
+        time.sleep(1)
         self.page = driver.find_element(By.TAG_NAME, "html")
         self.page.click()
         self.wDict = dictionary_possible_words
@@ -58,7 +64,7 @@ class Bot(Wurdle):
          inputs a most probable answer after"""
         guesses =   ['brown', 'shady']
 
-        # ['soare', 'clint']
+
         # ['brown', 'shade']
         # 'two possible word combinations.
         possible_words = self.wDict
