@@ -4,13 +4,14 @@ from datetime import datetime
 import json
 from selenium import webdriver
 
-from selenium.webdriver.support import expected_conditions as ec
-from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from Words import dictionary_possible_words
-from selenium.webdriver.common.action_chains import ActionChains
-from selenium.webdriver.remote.webelement import WebElement
+
+# from selenium.webdriver.support import expected_conditions as ec
+# from selenium.webdriver.support.ui import WebDriverWait
+# from selenium.webdriver.common.action_chains import ActionChains
+# from selenium.webdriver.remote.webelement import WebElement
 
 class Wurdle:
     """Setup Class    """
@@ -62,7 +63,7 @@ class Bot(Wurdle):
     def eval(self):
         """inputs selected two guesses and edits our possible words list based off the response of evaluator,
          inputs a most probable answer after"""
-        guesses =   ['brown', 'shady']
+        guesses =   ['soare', 'clint']
 
 
         # ['brown', 'shade']
