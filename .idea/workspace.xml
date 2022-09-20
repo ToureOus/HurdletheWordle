@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fff3fd62-f5fe-45f9-be3b-911c130b3d5f" name="Changes" comment="9/18">
+    <list default="true" id="fff3fd62-f5fe-45f9-be3b-911c130b3d5f" name="Changes" comment="9/20 Soare, Clint implementation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/worddata.csv" beforeDir="false" afterPath="$PROJECT_DIR$/worddata.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,6 +146,7 @@
       <workItem from="1663516730511" duration="9250000" />
       <workItem from="1663527091561" duration="11000" />
       <workItem from="1663530456493" duration="45000" />
+      <workItem from="1663683421802" duration="430000" />
     </task>
     <task id="LOCAL-00001" summary="edited code v1">
       <created>1649365988013</created>
@@ -303,7 +302,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663523068086</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="9/20 Soare, Clint implementation">
+      <created>1663683558106</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1663683558106</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -350,9 +356,10 @@
     <MESSAGE value="9/14/2022" />
     <MESSAGE value="9/15/2022: word in 3" />
     <MESSAGE value="9/18 added functionality to close popups" />
-    <option name="LAST_COMMIT_MESSAGE" value="9/18 added functionality to close popups" />
+    <MESSAGE value="9/20 Soare, Clint implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="9/20 Soare, Clint implementation" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/HurdletheWordleBot$main.coverage" NAME="main Coverage Results" MODIFIED="1663530469456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HurdletheWordleBot$main.coverage" NAME="main Coverage Results" MODIFIED="1663683541027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
