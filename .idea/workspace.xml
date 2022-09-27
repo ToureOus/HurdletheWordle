@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fff3fd62-f5fe-45f9-be3b-911c130b3d5f" name="Changes" comment="9/23 in 3">
+    <list default="true" id="fff3fd62-f5fe-45f9-be3b-911c130b3d5f" name="Changes" comment="9/26 in 3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/worddata.csv" beforeDir="false" afterPath="$PROJECT_DIR$/worddata.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,6 +151,9 @@
       <workItem from="1663684872351" duration="726000" />
       <workItem from="1663786169208" duration="1336000" />
       <workItem from="1663941045401" duration="1487000" />
+      <workItem from="1664199263762" duration="744000" />
+      <workItem from="1664288519635" duration="635000" />
+      <workItem from="1664293588039" duration="360000" />
     </task>
     <task id="LOCAL-00001" summary="edited code v1">
       <created>1649365988013</created>
@@ -347,7 +351,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663941238675</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="9/26 in 3">
+      <created>1664199336979</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1664199336979</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -397,9 +408,10 @@
     <MESSAGE value="9/20 Soare, Clint implementation" />
     <MESSAGE value="9/21: Solved in 3" />
     <MESSAGE value="9/23 in 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="9/23 in 3" />
+    <MESSAGE value="9/26 in 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="9/26 in 3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/HurdletheWordleBot$main.coverage" NAME="main Coverage Results" MODIFIED="1663941064532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HurdletheWordleBot$main.coverage" NAME="main Coverage Results" MODIFIED="1664288547693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
