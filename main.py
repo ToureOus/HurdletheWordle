@@ -68,9 +68,11 @@ class Bot(Wurdle):
         """inputs selected two guesses and edits our possible words list based off the response of evaluator,
          inputs a most probable answer after"""
         guesses = ['soare', 'clint']
-
         # ['brown', 'shade']
-        # two possible word combinations.
+        #trying to edit the possible word list so that it removes already solved words?
+
+        # possible_words = [x for x in dictionary_possible_words if x not in v]
+        # print("in list before are:", possible_words)
         possible_words = self.wDict
         known_l = []
         # known letters list
@@ -114,13 +116,11 @@ class Bot(Wurdle):
             while type(evaluator[q + 1]) is not list:
                 try:
                     for i in range(5):
+                        word = possible_words[0]
                         self.page.send_keys(Keys.BACKSPACE)
                         possible_words.remove(word)
-                        word = possible_words[0]
+
                         self.enter_word(word)
-
-                        evaluator = self.get_data()
-
                 finally:
                     self.correct_stats(word)
                     return self.count
