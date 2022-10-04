@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fff3fd62-f5fe-45f9-be3b-911c130b3d5f" name="Changes" comment="9/29 in 3">
+    <list default="true" id="fff3fd62-f5fe-45f9-be3b-911c130b3d5f" name="Changes" comment="10/3 solved in 4, stink vs sting">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/worddata.csv" beforeDir="false" afterPath="$PROJECT_DIR$/worddata.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,6 +159,8 @@
       <workItem from="1664371155023" duration="10752000" />
       <workItem from="1664416397370" duration="1266000" />
       <workItem from="1664511913143" duration="9000" />
+      <workItem from="1664842411404" duration="274000" />
+      <workItem from="1664894346493" duration="2739000" />
     </task>
     <task id="LOCAL-00001" summary="edited code v1">
       <created>1649365988013</created>
@@ -382,7 +386,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664457430170</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="10/3 solved in 4, stink vs sting">
+      <created>1664842593440</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1664842593440</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -411,7 +422,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="edited code v1" />
     <MESSAGE value="04/072022" />
     <MESSAGE value="exceptions added" />
     <MESSAGE value="guided to make bot guess quicker, old bot added with original code. uses new words, guesses in 3." />
@@ -436,9 +446,10 @@
     <MESSAGE value="9/27 in 3" />
     <MESSAGE value="9/28&#10;Correct_stats : after bot completes wordle, function opens csv file and searches for the correct word. If word already in file it will not write it to the file again. &#10;&#10;PS. Correct in 3" />
     <MESSAGE value="9/29 in 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="9/29 in 3" />
+    <MESSAGE value="10/3 solved in 4, stink vs sting" />
+    <option name="LAST_COMMIT_MESSAGE" value="10/3 solved in 4, stink vs sting" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/HurdletheWordleBot$main.coverage" NAME="main Coverage Results" MODIFIED="1664457383094" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HurdletheWordleBot$main.coverage" NAME="main Coverage Results" MODIFIED="1664897105042" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

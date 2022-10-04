@@ -70,15 +70,28 @@ class Bot(Wurdle):
         guesses = ['soare', 'clint']
         # ['brown', 'shade']
         #Next task, append known list for words already in worddata.csv
+        # with open('worddata.csv', 'r') as f:
+        #     s = csv.reader(f) #reads csv file completely
+        #     c = datetime.now().date()
+        #     for row in s:
+        #         if str(c) in row[0]:
+        #             possible_words = self.wDict
+        #         else:
+        #             possible_words = [word for word in self.wDict if (word.isalpha() not in list(s))]
+       #idea almost working
 
+
+        # [possible_words not in solved in self.wDict]
         # something like possible_words = [x for x in dictionary_possible_words if x not in v]
         # print("in list before are:", possible_words)
         possible_words = self.wDict
+
         known_l = []
         # known letters list
         word = guesses[0]
         self.enter_word(word)
         evaluator = self.get_data()
+
 
         for q in range(5):
             stats = evaluator[q]
