@@ -69,9 +69,9 @@ class Bot(Wurdle):
          inputs a most probable answer after"""
         guesses = ['soare', 'clint']
         # ['brown', 'shade']
-        #trying to edit the possible word list so that it removes already solved words?
+        #Next task, append known list for words already in worddata.csv
 
-        # possible_words = [x for x in dictionary_possible_words if x not in v]
+        # something like possible_words = [x for x in dictionary_possible_words if x not in v]
         # print("in list before are:", possible_words)
         possible_words = self.wDict
         known_l = []
