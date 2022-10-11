@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fff3fd62-f5fe-45f9-be3b-911c130b3d5f" name="Changes" comment="10/4 in 4, working on adjusting csv and list">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="fff3fd62-f5fe-45f9-be3b-911c130b3d5f" name="Changes" comment="10/5 in 3, no updates" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -159,6 +157,7 @@
       <workItem from="1664511913143" duration="9000" />
       <workItem from="1664842411404" duration="274000" />
       <workItem from="1664894346493" duration="2769000" />
+      <workItem from="1664976331973" duration="337000" />
     </task>
     <task id="LOCAL-00001" summary="edited code v1">
       <created>1649365988013</created>
@@ -398,7 +397,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664897123522</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="10/5 in 3, no updates">
+      <created>1664976632658</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1664976632658</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -427,7 +433,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="exceptions added" />
     <MESSAGE value="guided to make bot guess quicker, old bot added with original code. uses new words, guesses in 3." />
     <MESSAGE value="Added new class Setup." />
     <MESSAGE value="New word combination. Testing daily." />
@@ -452,9 +457,10 @@
     <MESSAGE value="9/29 in 3" />
     <MESSAGE value="10/3 solved in 4, stink vs sting" />
     <MESSAGE value="10/4 in 4, working on adjusting csv and list" />
-    <option name="LAST_COMMIT_MESSAGE" value="10/4 in 4, working on adjusting csv and list" />
+    <MESSAGE value="10/5 in 3, no updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="10/5 in 3, no updates" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/HurdletheWordleBot$main.coverage" NAME="main Coverage Results" MODIFIED="1664897105042" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HurdletheWordleBot$main.coverage" NAME="main Coverage Results" MODIFIED="1664976583080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
